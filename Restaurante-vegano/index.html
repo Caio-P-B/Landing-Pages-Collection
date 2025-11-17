@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logoBackground"><img src="images/logo.svg" alt="logo" class="logoImg"></div>
+                <div class="logoText">
+                    <h1>Sabor Natural</h1>
+                    <p>Comida Vegana Gourmet</p>
+                </div>
+            </a>
+            <div class="navDiv">
+                <nav>
+                    <a href="#filosofia">Nossa Filosofia</a>
+                    <a href="#cardapio">Cardapio</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+            </div>
+            <div class="navOrder">
+                <a href="#order">
+                    <img src="images/wppLogo.svg" alt="">
+                    <h3>Fazer Pedido</h3>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contentContainer">
+            <div class="tag">
+                <img src="images/star.svg" alt="">
+                <p>100% Vegano & Orgânico </p>
+            </div>
+            <h1>Comida vegana <br> que conquista </h1>
+            <p>Sabores autênticos, ingredientes frescos e muito amor em cada prato. Descubra que comida vegana pode ser
+                irresistível. </p>
+            <div class="btns">
+                <h3 class="cardapioBtn">Cardapio →</h3>
+                <div class="entrega">
+                    <img src="images/clock.svg" alt="">
+                    <div class="entregaText">
+                        <h2>Entrega Rapida</h2>
+                        <h3>Apenas 30 minutos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="Filosofia" id="filosofia">
+        <p class="sectionName">Nossa Filosofia</p>
+        <h1 class="sectionTitle">Por que escolher vegano?</h1>
+        <p class="sectionSub">Alimentação consciente que faz bem para você, para os animais e para o planeta </p>
+        <div class="motivos">
+            <div class="caixaMotivo">
+                <div>
+                    <div class="heart"></div>
+                </div>
+                <h1>Saúde em Primeiro Lugar</h1>
+                <p>Ingredientes naturais, ricos em nutrientes, vitaminas e minerais essenciais. Sem conservantes, sem
+                    gorduras trans, apenas o melhor da natureza. </p>
+            </div>
+            <div class="caixaMotivo">
+                <div>
+                    <div class="leafIco"></div>
+                </div>
+                <h1>Sustentabilidade</h1>
+                <p>Reduzimos o impacto ambiental escolhendo produtos locais e orgânicos. Cada refeição é um passo em
+                    direção a um planeta mais saudável. </p>
+            </div>
+            <div class="caixaMotivo">
+                <div>
+                    <div class="fork"></div>
+                </div>
+                <h1>Sabor Autêntico</h1>
+                <p>Nossos chefs transformam ingredientes simples em experiências gastronômicas memoráveis. Comida vegana
+                    que surpreende e encanta. </p>
+            </div>
+        </div>
+    </section>
+    <section class="cardapio" id="cardapio">
+        <p class="sectionName">Nosso Menu</p>
+        <h1 class="sectionTitle">Cardápio Gourmet</h1>
+        <p class="sectionSub">Pratos preparados com amor e ingredientes selecionados</p>
+
+        <!-- Tabs do cardápio -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="entradas">Entradas</button>
+            <button class="tab-button" data-tab="principais">Pratos Principais</button>
+            <button class="tab-button" data-tab="sobremesas">Sobremesas</button>
+            <button class="tab-button" data-tab="bebidas">Bebidas</button>
+        </div>
+
+        <div class="tab-content">
+            <!-- Conteúdo para Entradas -->
+            <div class="tab-pane active" id="entradas">
+                <div class="grid-cardapio">
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada1.jfif" alt="Bruschetta de Tomate">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Cogumelos Recheados</h3>
+                            <p>Recheados com uma mistura saudável de quinoa, espinafre e ervas.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada2.jfif" alt="Hummus com Pães">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Coquetel de Camarão Saudável</h3>
+                            <p>Camarões cozidos servidos com uma salsa fresca de abacate e tomate.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada3.jfif" alt="Salada de Quinoa">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Carpaccio de Beterraba</h3>
+                            <p>Fatias finas de beterraba com queijo de cabra, nozes e rúcula.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada4.jfif" alt="Cogumelos Empanados">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Canapés de Pepino e Salmão</h3>
+                            <p>Fatias de pepino com iogurte e endro, cobertas com salmão defumado.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada5.jfif" alt="Tapioca Recheada">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Tapioca Recheada</h3>
+                            <p>Tapioca de goma orgânica com recheio de palmito pupunha e tomates seletos.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/entradas/entrada6.jfif" alt="Bolinhos de Lentilha">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Salsa de Abacate e Manga</h3>
+                            <p>Salsa fresca e tropical de abacate, manga, coentro e limão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo para Pratos Principais -->
+            <div class="tab-pane" id="principais">
+                <div class="grid-cardapio">
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato1.jfif" alt="Risoto de Cogumelos">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Peixe Branco Assado com Legumes</h3>
+                            <p>Lombo de peixe (tipo bacalhau ou pescada) assado com vegetais de raiz.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato2.jfif" alt="Lasanha de Berinjela">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Almôndegas de Peru com "Zoodles"</h3>
+                            <p>Almôndegas leves de peru ao molho de tomate sobre espaguete de abobrinha.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato3.jfif" alt="Curry Verde Tailandês">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Curry Leve de Vegetais</h3>
+                            <p>Curry cremoso de vegetais e grão-de-bico ao leite de coco light.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato4.jfif" alt="Hambúrguer de Grão-de-Bico">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Hambúrguer Artesanal</h3>
+                            <p>Hambúrguer de grão-de-bico com salada fresca e maionese de abacate, no pão integral.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato5.jfif" alt="Espaguete de Abobrinha">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Peito de Frango Selado</h3>
+                            <p>Frango grelhado com purê de batata-doce roxa e aspargos frescos.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/pratosPrincipais/prato6.jfif" alt="Tacos Mexicanos">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Salmão Poché ao Molho Dill</h3>
+                            <p>Salmão macio cozido lentamente com molho leve de iogurte e endro (aneto).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo para Sobremesas -->
+            <div class="tab-pane" id="sobremesas">
+                <div class="grid-cardapio">
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa1.jfif" alt="Cheesecake de Frutas Vermelhas">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Pudim de Chia com Manga</h3>
+                            <p>Pudim de chia com coco, coberto com purê de manga e frutas.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa2.jfif" alt="Mousse de Chocolate">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Abacaxi Grelhado com Canela</h3>
+                            <p>atias de abacaxi grelhado com canela, servidas com iogurte grego.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa3.jfif" alt="Pudim de Coco">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Mousse de Chocolate e Abacate</h3>
+                            <p>Mousse de cacau e abacate, finalizado com framboesas frescas.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa4.jfif" alt="Bolo de Cenoura">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Crumble Saudável de Frutas Vermelhas</h3>
+                            <p>Frutas vermelhas assadas com cobertura crocante de aveia e nozes.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa5.jfif" alt="Sorvete de Frutas">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Pera Cozida com Especiarias</h3>
+                            <p>Pera inteira cozida em calda leve de canela e anis estrelado.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/sobremesas/sobremesa6.jfif" alt="Torta de Limão">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Tartelete de Frutas Saudável</h3>
+                            <p>Mini torta com base de amêndoas, iogurte e frutas frescas da estação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo para Bebidas -->
+            <div class="tab-pane" id="bebidas">
+                <div class="grid-cardapio">
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida1.jfif" alt="Suco Verde Detox">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Matcha Latte com Amêndoas</h3>
+                            <p>Chá matcha cremoso preparado com leite de amêndoas vaporizado.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida2.jfif" alt="Chá Gelado de Pêssego">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Água Saborizada Cítrica</h3>
+                            <p>Água fresca com infusão de pepino, rodelas de limão e morangos.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida3.jfif" alt="Smoothie de Morango">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Golden Milk Latte</h3>
+                            <p>Bebida quente e anti-inflamatória de cúrcuma, gengibre e especiarias.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida4.jfif" alt="Café Especial">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Vitamina de Frutas Vermelhas</h3>
+                            <p>Smoothie cremoso e antioxidante de mirtilos, framboesas e morangos.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida5.jfif" alt="Água Saborizada">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Suco de Cenoura e Gengibre</h3>
+                            <p>Suco fresco e natural de cenoura, laranja e um toque de gengibre.</p>
+                        </div>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="cardapio-img">
+                            <img src="images/bebidas/bebida6.jfif" alt="Coquetel Sem Álcool">
+                        </div>
+                        <div class="cardapio-content">
+                            <h3>Smoothie Verde Vibrante</h3>
+                            <p>Bebida cremosa de espinafre, abacaxi, hortelã e sementes de chia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="galeria" id="galeria">
+        <p class="sectionName">Galeria</p>
+        <h1 class="sectionTitle">Nossos Pratos</h1>
+        <p class="sectionSub">Cada prato é uma obra de arte culinária</p>
+        <div class="imgGaleria">
+            <div class="imgBox"><img src="images/galeria/galeriaImg1.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg2.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg3.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg4.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg5.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg6.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg7.jfif" alt=""></div>
+            <div class="imgBox"><img src="images/galeria/galeriaImg8.jfif" alt=""></div>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <div class="wppOrderLogoBackground">
+            <div class="wppOrderLogo"></div>
+        </div>
+        <h1>Peça pelo WhatsApp</h1>
+        <p>Faça seu pedido de forma rápida e fácil. Nossa equipe está pronta para atendê-lo! </p>
+        <div class="wppBtn">
+            <div class="wppOrderLogoBackground">
+                <div class="wppOrderLogo" style="width: 40px; height: 40px;"></div>
+            </div>
+            <h4>Iniciar pedido pelo whatsapp</h4>
+        </div>
+        <div class="beneficios">
+            <div>
+                <h3>Entrega em 30min</h3>
+            </div>
+            <div>
+                <h3>Pagamento Seguro</h3>
+            </div>
+            <div>
+                <h3>Qualidade Garantida</h3>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <p class="sectionName">Dúvidas Frequentes</p>
+        <h1 class="sectionTitle">Perguntas sobre Veganismo</h1>
+        <div class="pergunta">
+            <details>
+                <summary>Comida vegana tem proteína suficiente?</summary>
+                <p>Sim! Nossos pratos são balanceados com proteínas vegetais de alta qualidade como grão-de-bico,
+                    lentilhas, quinoa, tofu e castanhas. Cada refeição é desenvolvida por nutricionistas para garantir
+                    todos os nutrientes necessários. </p>
+            </details>
+            <details>
+                <summary>Os pratos são realmente saborosos?</summary>
+                <p>Absolutamente! Nossos chefs são especializados em gastronomia vegana gourmet. Usamos especiarias,
+                    ervas frescas e técnicas culinárias que realçam os sabores naturais dos ingredientes. Muitos
+                    clientes não-veganos se surpreendem!</p>
+            </details>
+            <details>
+                <summary>Vocês usam ingredientes orgânicos?</summary>
+                <p>Sempre que possível, priorizamos ingredientes orgânicos e de produtores locais. Trabalhamos com
+                    fornecedores certificados que compartilham nossos valores de sustentabilidade e qualidade. </p>
+            </details>
+            <details>
+                <summary>Como funciona o delivery?</summary>
+                <p>Entregamos em até 30 minutos na região. Faça seu pedido pelo WhatsApp ou telefone. Aceitamos cartão,
+                    PIX e dinheiro. Embalagens eco-friendly para manter a temperatura e o frescor dos pratos. </p>
+            </details>
+            <details>
+                <summary>Posso personalizar meu pedido?</summary>
+                <p>Claro! Adoramos adaptar nossos pratos às suas preferências. Tem alguma restrição alimentar ou
+                    ingrediente que prefere evitar? Só avisar no pedido que preparamos especialmente para você. </p>
+            </details>
+        </div>
+    </section>
+    <footer>
+        <div class="footerUp">
+            <div class="sobre">
+                <div class="logo">
+                    <div class="logoBackground"><img src="images/logo.svg" alt="logo" class="logoImg"></div>
+                    <h1 style="color: #f1f1f1; line-height: 51px; margin: 0; padding: 0 0 0 10px;">Sabor Natural</h1>
+                </div>
+                <p>Comida vegana gourmet com ingredientes frescos e muito amor. Transformando a alimentação consciente
+                    em experiência deliciosa.</p>
+            </div>
+            <div class="horarios">
+                <h1>Horários</h1>
+                <ul>
+                    <li>Segunda a Sexta: 11h - 22h</li>
+                    <li>Sábado: 12h - 23h</li>
+                    <li>Domingo: 12h - 21h</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="subFooter">
+            <p class="copyright">© 2026 Sabor Natural. Todos os direitos reservados.</p>
+            <div class="socialMediaIcons">
+                <div>
+                    <div class="facebookLogo"></div>
+                </div>
+                <div>
+                    <div class="instagramLogo"></div>
+                </div>
+                <div>
+                    <div class="whatsappLogo"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

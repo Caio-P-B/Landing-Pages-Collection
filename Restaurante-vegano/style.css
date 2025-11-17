@@ -1,0 +1,638 @@
+@charset "UTF-8";
+
+
+:root {
+    --verdeNatureza: #4CAF50;
+    --brancoSuave: #f1f1f1;
+    --begeNatural: #F5F5DC;
+    --MarromTerra: #8D6E63;
+    --pretoSuave: #1b1b1b;
+    --site-max-width: 1000px;
+    --site-side-padding: 20px;
+    --bullet-size: 24px;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    color: var(--pretoSuave);
+}
+
+body {
+    background-color: var(--brancoSuave);
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--brancoSuave);
+    height: 80px;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 2px 2px 5px lightgray;
+
+}
+
+.container {
+
+    max-width: var(--site-max-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--site-side-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    /* remove underline de links */
+    color: inherit;
+    /* mantém a cor do texto */
+    cursor: pointer;
+}
+
+.logoBackground {
+    background-color: var(--verdeNatureza);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 13px;
+    width: 25px;
+    height: 25px;
+}
+
+.logoImg {
+    width: 25px;
+    height: 25px;
+
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoText>h1 {
+    color: var(--verdeNatureza);
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.logoText>p {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+nav>a {
+    text-decoration: none;
+    transition: color .3s;
+    padding: 0 10px;
+    color: var(--pretoSuave);
+}
+
+nav>a:hover {
+    color: var(--verdeNatureza);
+}
+
+.navOrder>a {
+    display: flex;
+    background-color: var(--verdeNatureza);
+    padding: 0 20px;
+    border-radius: 50px;
+    transition: background-color .1s;
+    text-decoration: none;
+}
+
+.navOrder:hover>a {
+    background-color: #55c259;
+}
+
+.navOrder>a>img {
+    width: 30px;
+    height: auto;
+    padding: 0;
+}
+
+.navOrder>a>h3 {
+    color: var(--brancoSuave);
+    padding: 0 0 0 10px;
+    font-weight: normal;
+
+}
+
+main {
+    background-image: url(images/mainBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+}
+
+.contentContainer {
+    color: var(--brancoSuave);
+    padding: 50px 0px;
+
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding-left: var(--site-side-padding);
+    padding-right: var(--site-side-padding);
+}
+
+
+.Filosofia,
+.cardapio,
+.galeria,
+.order,
+.faq,
+.footerUp,
+.subFooter {
+    /* max-width: var(--site-max-width); */
+    margin: 0 auto;
+    padding: 40px var(--site-side-padding);
+}
+
+.tag {
+    background-color: var(--verdeNatureza);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    border-radius: 50px;
+    padding: 8px 16px;
+    margin: 0px 0px 24px;
+}
+
+.tag>img {
+    height: 16px;
+    margin-right: 10px;
+}
+
+.contentContainer>h1 {
+    font-size: 3em;
+}
+
+.contentContainer>p {
+    max-width: 600px;
+}
+
+.btns {
+    display: flex;
+}
+
+.cardapioBtn {
+    background-color: var(--verdeNatureza);
+    border-radius: 50px;
+    padding: 16px 32px;
+    width: 200px;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.entrega {
+    color: var(--pretoSuave);
+    background-color: var(--brancoSuave);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.entrega>img {
+    height: 38px;
+    background-color: #4caf4f33;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px 20px;
+}
+
+.entregaText>h3 {
+    color: var(--verdeNatureza);
+    margin: 0;
+}
+
+.entregaText>h2 {
+    margin: 0;
+}
+
+.Filosofia {
+    background-color: var(--begeNatural);
+    /* width: 100vw; */
+    /* margin-left: -50vw;
+    margin-right: -50vw; */
+}
+
+.sectionName {
+    color: var(--verdeNatureza);
+    text-align: center;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2em;
+}
+
+.sectionSub {
+    text-align: center;
+}
+
+.motivos {
+    display: flex;
+}
+
+.caixaMotivo {
+    margin: 0 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px lightgray;
+}
+
+.caixaMotivo>div {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--brancoSuave);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.caixaMotivo>div>div {
+    width: 40px;
+    height: 40px;
+    background-color: var(--verdeNatureza);
+}
+
+.heart {
+    mask-image: url(images/heart.svg);
+}
+
+.leafIco {
+    mask-image: url(images/leaf.svg);
+}
+
+.fork {
+    mask-image: url(images/fork.svg);
+}
+
+/* Responsividade para caixaMotivo */
+@media (max-width: 900px) {
+    .motivos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixaMotivo {
+        margin: 15px 0;
+        padding: 25px;
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .caixaMotivo {
+        margin: 12px 0;
+        padding: 20px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .sectionTitle {
+        font-size: 1.5em;
+    }
+}
+
+/* INICIO */
+
+/* Estilos para as tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 12px 24px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Conteúdo das tabs */
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Grid do cardápio */
+.grid-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.cardapio-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cardapio-item:hover {
+    transform: scale(1.05);
+}
+
+.cardapio-content {
+    padding: 10px;
+}
+
+.cardapio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .navDiv {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .tab-button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-cardapio {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* FIM */
+.galeria {
+    background-color: var(--begeNatural);
+}
+
+.imgGaleria {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.imgBox {
+    overflow: hidden;
+    box-shadow: 2px 2px 5px gray;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.imgBox:hover {
+    scale: 1.1;
+    box-shadow: 2px 2px 10px black;
+}
+
+.imgBox>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--brancoSuave);
+    background-color: var(--verdeNatureza);
+}
+
+.wppOrderLogoBackground {
+    background-color: var(--brancoSuave);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.wppOrderLogo {
+    mask-image: url(images/wppLogo.svg);
+    background-color: var(--verdeNatureza);
+    width: 100px;
+    height: 100px;
+}
+
+.order>h1 {
+    font-size: 3em;
+}
+
+.order>p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.wppBtn {
+    margin: 50px 0;
+    background-color: var(--brancoSuave);
+    color: var(--verdeNatureza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 5px 20px;
+}
+
+.beneficios {
+    display: flex;
+}
+
+.beneficios>div {
+    margin: 10px;
+}
+
+details {
+    background-color: var(--begeNatural);
+    margin: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::before {
+    content: ">";
+    font-weight: bolder;
+    color: var(--verdeNatureza);
+    margin-right: 5px;
+    transition: transform 1s ease;
+
+}
+
+details[open] summary::before {
+    content: "V";
+    font-weight: bold;
+    color: var(--verdeNatureza);
+    transform: rotate(90deg);
+}
+
+footer {
+    background-color: var(--MarromTerra);
+    color: var(--brancoSuave)
+}
+
+.footerUp {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footerUp>div {
+    text-align: start;
+    max-width: 350px;
+}
+
+.footerUp h1 {
+    text-align: center;
+}
+
+.horarios {
+    padding-left: 0;
+}
+
+.horarios li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.horarios li::before {
+    content: "";
+    display: inline-block;
+    width: var(--bullet-size);
+    height: var(--bullet-size);
+    background-image: url(images/clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 0 var(--bullet-size);
+}
+
+.subFooter {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socialMediaIcons {
+    display: flex;
+}
+
+.socialMediaIcons>div {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 10px;
+}
+
+.socialMediaIcons>div>div {
+    width: 40px;
+    height: 40px;
+    background-color: var(--brancoSuave);
+    transition: background-color .3s;
+}
+
+.socialMediaIcons>div>div:hover {
+    background-color: var(--verdeNatureza);
+}
+
+.instagramLogo {
+    mask-image: url(images/facebookLogo.svg);
+}
+
+.facebookLogo {
+    mask-image: url(images/intagramLogo.svg);
+}
+
+.whatsappLogo {
+    mask-image: url(images/wppLogo.svg);
+}
