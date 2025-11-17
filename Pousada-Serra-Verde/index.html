@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serra Verde - Seu Refúgio na Natureza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span class="logo-icon">🌲</span>
+                    <span class="logo-text">Serra Verde</span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#acomodacoes" class="nav-link">Acomodações</a>
+                    <a href="#galeria" class="nav-link">Galeria</a>
+                    <a href="#pacotes" class="nav-link">Pacotes</a>
+                    <button class="btn btn-primary" onclick="scrollToReserva()">Reservar</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Seu refúgio na natureza</h1>
+            <p class="hero-subtitle">Recorra à tranquilidade e encontre paz. Aqui você encontra acomodações aconchegantes em meio à serra com vista para a natureza preservada</p>
+            <button class="btn btn-hero" onclick="scrollToAcomodacoes()">Ir para hospedagens</button>
+        </div>
+    </section>
+
+    <!-- Nossas Acomodações -->
+    <section id="acomodacoes" class="acomodacoes">
+        <div class="container">
+            <h2 class="section-title">Nossas Acomodações</h2>
+            <p class="section-subtitle">Conforto e aconchego para uma estadia única na serra</p>
+            
+            <div class="acomodacoes-grid">
+                <!-- Card 1 -->
+                <div class="acomodacao-card">
+                    <img src="images/quartoCasado.jpg" alt="Quarto Casal">
+                    <div class="card-content">
+                        <h3 class="card-title">Quarto Casal</h3>
+                        <p class="card-description">Perfeito para casais que buscam de romantismo na natureza</p>
+                        <ul class="features-list">
+                            <li>✓ Wi-fi grátis</li>
+                            <li>✓ Ar condicionado</li>
+                            <li>✓ Banheiro privativo</li>
+                            <li>✓ Varanda com vista</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">R$ 250<small>/noite</small></span>
+                            <button class="btn btn-secondary" onclick="selecionarAcomodacao('Quarto Casal')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="acomodacao-card">
+                    <img src="images/quartoFamilia.jpg" alt="Quarto Família">
+                    <div class="card-content">
+                        <h3 class="card-title">Quarto Família</h3>
+                        <p class="card-description">Espaço amplo e confortável para toda a sua família</p>
+                        <ul class="features-list">
+                            <li>✓ Wi-fi grátis</li>
+                            <li>✓ Ar condicionado</li>
+                            <li>✓ 2 banheiros</li>
+                            <li>✓ Sala de estar</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">R$ 420<small>/noite</small></span>
+                            <button class="btn btn-secondary" onclick="selecionarAcomodacao('Quarto Família')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="acomodacao-card">
+                    <img src="images/chale.jpg" alt="Chalé">
+                    <div class="card-content">
+                        <h3 class="card-title">Chalé</h3>
+                        <p class="card-description">Experiência completa e total imersão na natureza</p>
+                        <ul class="features-list">
+                            <li>✓ Wi-fi grátis</li>
+                            <li>✓ Lareira</li>
+                            <li>✓ Varanda privativa</li>
+                            <li>✓ Fogueira próxima</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">R$ 580<small>/noite</small></span>
+                            <button class="btn btn-secondary" onclick="selecionarAcomodacao('Chalé')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria de Fotos</h2>
+            <p class="section-subtitle">Conheça nossos espaços e inspire-se a visitar</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item galeria-item-large">
+                    <img src="images/galeriaImg1.jpg" alt="Galeria">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/galeriaImg2.jpg" alt="Galeria">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/galeriaImg3.jpg" alt="Galeria">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/galeriaImg4.jpg" alt="Galeria">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/galeriaImg5.jpg" alt="Galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que fazer na região -->
+    <section id="pacotes" class="atividades">
+        <div class="container">
+            <h2 class="section-title">O que fazer na região</h2>
+            <p class="section-subtitle">Descubra as maravilhas naturais e atrações locais</p>
+            
+            <div class="atividades-grid">
+                <div class="atividade-card">
+                    <div class="atividade-icon">🥾</div>
+                    <h3>Trilhas Ecológicas</h3>
+                    <p>Explore trilhas incríveis com vista para a serra e aproveite momentos únicos na natureza</p>
+                    <span class="duration">5 dias de percurso</span>
+                </div>
+
+                <div class="atividade-card">
+                    <div class="atividade-icon">💧</div>
+                    <h3>Cachoeiras</h3>
+                    <p>Visite cascatas cristalinas perfeitas para nadar e se refrescar em dias quentes</p>
+                    <span class="duration">Meia hora de distância</span>
+                </div>
+
+                <div class="atividade-card">
+                    <div class="atividade-icon">🚜</div>
+                    <h3>Fazendas Locais</h3>
+                    <p>Conheça o trabalho dos agricultores locais e leve produtos frescos da região</p>
+                    <span class="duration">2 km do resort</span>
+                </div>
+
+                <div class="atividade-card">
+                    <div class="atividade-icon">🔭</div>
+                    <h3>Observação</h3>
+                    <p>Observe pássaros e vida selvagem em seu habitat natural durante passeios guiados</p>
+                    <span class="duration">1 hora de percurso</span>
+                </div>
+
+                <div class="atividade-card">
+                    <div class="atividade-icon">🏛️</div>
+                    <h3>Centro Histórico</h3>
+                    <p>Explore a história da região visitando construções antigas e museus locais</p>
+                    <span class="duration">15 km de distância</span>
+                </div>
+
+                <div class="atividade-card">
+                    <div class="atividade-icon">🐴</div>
+                    <h3>Cavalgadas</h3>
+                    <p>Experiência única cavalgando pelos trilhos e paisagens especiais da região</p>
+                    <span class="duration">Meia hora de distância</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faça sua Reserva -->
+    <section id="reserva" class="reserva">
+        <div class="container">
+            <h2 class="section-title">Faça sua Reserva</h2>
+            <p class="section-subtitle">Reserve diretamente conosco e garanta a melhor época para visitar</p>
+            
+            <form class="reserva-form" id="reservaForm" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="acomodacao">Acomodação</label>
+                        <select id="acomodacao" name="acomodacao" required>
+                            <option value="">Selecione uma acomodação</option>
+                            <option value="Quarto Casal">Quarto Casal - R$ 250</option>
+                            <option value="Quarto Família">Quarto Família - R$ 420</option>
+                            <option value="Chalé">Chalé - R$ 580</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hospedes">Número de Hóspedes</label>
+                        <input type="number" id="hospedes" name="hospedes" min="1" max="10" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite suas observações ou pedidos especiais"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">✓ Confirmar Reserva</button>
+                <p class="form-info">Você não será cobrado imediatamente.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos hóspedes</h2>
+            <p class="section-subtitle">Experiências reais de quem já aproveitou nossos serviços</p>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="depoimento-texto">"Que experiência incrível! A natureza, o ar puro e o atendimento foram excelentes. Recomendo muito para quem quer desconectar e se reconectar com a natureza. Voltaremos com certeza!"</p>
+                    <div class="depoimento-autor">
+                        <img src="/placeholder.svg?height=50&width=50" alt="Mariana Santos">
+                        <div>
+                            <p class="autor-nome">Mariana Santos</p>
+                            <p class="autor-info">Hospedaria em São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="depoimento-texto">"Melhor decisão do ano! O local é perfeito para casais e famílias. A comida é deliciosa, o ambiente é aconchegante e ainda temos contato direto com a natureza. Cinco estrelas!"</p>
+                    <div class="depoimento-autor">
+                        <img src="/placeholder.svg?height=50&width=50" alt="Carlos Oliveira">
+                        <div>
+                            <p class="autor-nome">Carlos Oliveira</p>
+                            <p class="autor-info">Hospedaria do Rio de Janeiro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="depoimento-texto">"Experiência extraordinária que surpreendeu todas as expectativas. O cuidado com a sustentabilidade e o conforto do hóspede é impressionante. Continuem assim!"</p>
+                    <div class="depoimento-autor">
+                        <img src="/placeholder.svg?height=50&width=50" alt="Juliana Leite">
+                        <div>
+                            <p class="autor-nome">Juliana Leite</p>
+                            <p class="autor-info">Hospedaria de Minas Gerais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Serra Verde</h4>
+                    <p>Seu refúgio na natureza</p>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Contato:</strong> (99) 99999-9999</p>
+                    <p>📧 contato@serraverde.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Serra Verde. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

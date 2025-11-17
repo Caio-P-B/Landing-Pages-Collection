@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sérgio Lima - Consultoria Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Sérgio Lima</h1>
+                    <p>CFP | CPA | Consultoria Financeira</p>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#problemas">Problemas</a></li>
+                        <li><a href="#metodo">Método</a></li>
+                        <li><a href="#calculadora">Calculadora</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <button class="btn-secondary">Certificado OVM</button>
+                    <button class="btn-primary">Quero Economizar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Independência Financeira</h2>
+                    <h3>é possível</h3>
+                    <p>Consultoria personalizada para transformar sua relação com o dinheiro e construir um futuro próspero</p>
+                    <button class="btn-primary btn-large">Quero Economizar Agora</button>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Clientes Atendidos</p>
+                        </div>
+                        <div class="stat">
+                            <h4>R$ 2M+</h4>
+                            <p>Economizados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-box">
+                    <div class="hero-card">
+                        <div class="card-icon">📈</div>
+                        <h4>Resultados Garantidos</h4>
+                        <p>Método comprovado para organizar suas finanças em 30 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problemas que Resolvo -->
+    <section id="problemas" class="problemas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Problemas que Resolvo</h2>
+                <p>Transformo desafios financeiros em oportunidades de crescimento</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Dívidas</h3>
+                    <p>Estratégias para quitar dívidas e reorganizar o controle financeiro</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Investimentos</h3>
+                    <p>Carteiras personalizadas para multiplicar seu patrimônio</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☂️</div>
+                    <h3>Aposentadoria</h3>
+                    <p>Planejamento para uma aposentadoria confortável</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Educação Financeira</h3>
+                    <p>Conhecimento para tomar decisões financeiras inteligentes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método de Trabalho -->
+    <section id="metodo" class="metodo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Método de Trabalho</h2>
+                <p>4 etapas para transformar sua vida financeira</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Análise completa da sua situação financeira atual</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Planejamento</h3>
+                    <p>Estratégia personalizada para seus objetivos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Execução</h3>
+                    <p>Implementação das estratégias com acompanhamento</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Monitoramento</h3>
+                    <p>Acompanhamento contínuo e ajustes necessários</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Economia -->
+    <section id="calculadora" class="calculadora">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Calculadora de Economia</h2>
+                <p>Descubra quanto você pode economizar por mês</p>
+            </div>
+            <div class="calculadora-content">
+                <div class="calculadora-form">
+                    <div class="form-group">
+                        <label>Renda Mensal (R$)</label>
+                        <input type="number" id="renda" placeholder="5000" value="5000">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais (R$)</label>
+                        <input type="number" id="gastos" placeholder="3500" value="3500">
+                    </div>
+                    <button class="btn-primary btn-block">Calcular Economia</button>
+                </div>
+                <div class="calculadora-result">
+                    <div class="result-value">R$ <span id="resultado">0</span></div>
+                    <p>Potencial de Economia Mensal</p>
+                    <small>Com planejamento adequado</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comece Sua Jornada Financeira</h2>
+                <p>Preencha os dados e receba uma análise gratuita</p>
+            </div>
+            <form class="form-contato">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Renda Mensal</label>
+                        <select required>
+                            <option>Selecione</option>
+                            <option>Até R$ 2.000</option>
+                            <option>R$ 2.000 a R$ 5.000</option>
+                            <option>R$ 5.000 a R$ 10.000</option>
+                            <option>Acima de R$ 10.000</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary btn-block">Quero Minha Análise Gratuita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Resultados Reais -->
+    <section class="resultados">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resultados Reais</h2>
+                <p>Veja o que nossos clientes conquistaram</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">MS</div>
+                        <div class="testimonial-info">
+                            <h4>Maria Silva</h4>
+                            <p>Empresária</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Economizei R$ 500 por mês e consegui quitar todas as minhas dívidas. Agora estou investindo e construindo meu futuro!</p>
+                    <p class="testimonial-result">Economizou: R$ 500/mês</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">JS</div>
+                        <div class="testimonial-info">
+                            <h4>João Santos</h4>
+                            <p>Engenheiro</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Mes interessantes tiveram 18% no primeiro ano. Finalmente entendi como fazer o dinheiro trabalhar para mim.</p>
+                    <p class="testimonial-result">Rendimento: 15% a.a</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">AC</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Costa</h4>
+                            <p>Professora</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Consegui organizar minhas finanças e já tenho uma reserva de emergência de R$ 10.000. Me sinto muito mais segura!</p>
+                    <p class="testimonial-result">Reserva: R$ 10.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sérgio Lima</h4>
+                    <p>Consultoria Financeira Personalizada</p>
+                    <div class="social-links">
+                        <a href="#">in</a>
+                        <a href="#">ig</a>
+                        <a href="#">yt</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Certificações</h4>
+                    <p>CFP® - Certified Financial Planner</p>
+                    <p>CPA® - Certificado ANBIMA</p>
+                    <p>Registro OVM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📞 (99) 99999-9999</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Segurança</h4>
+                    <div class="security-icons">
+                        <span>🔒</span>
+                        <span>🔐</span>
+                        <span>⭐</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sérgio Lima - Consultoria Financeira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Sonhos - Confeitaria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <div class="logo-icon"><img src="images/cookie.svg" alt=""></div>
+                    <div>
+                        <div class="logo-title">Doces Sonhos</div>
+                        <div class="logo-subtitle">Confeitaria Artesanal</div>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#produtos" class="nav-link">Produtos</a>
+                    <a href="#cardapio" class="nav-link">Cardápio</a>
+                    <a href="#encomenda" class="nav-link">Como Encomendar</a>
+                    <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                </nav>
+
+                <div class="navbar-actions">
+                    <a href="tel:+5511999999999" class="contact-phone">
+                        <i class="fas fa-phone"></i> (11) 99999-9999
+                    </a>
+                    <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#produtos" class="nav-link">Produtos</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="#encomenda" class="nav-link">Como Encomendar</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="https://wa.me/5511999999999" class="btn-whatsapp-mobile" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Doces momentos<br>especiais</h1>
+                <p class="hero-description">Bolos e doces artesanatos feitos com amor e ingredientes selecionados para tornar seus momentos ainda mais doces</p>
+                <a href="#encomenda" class="btn btn-primary">
+                    <i class="fas fa-gift"></i> Fazer Encomenda
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop" alt="Bolo de Chocolate Delicioso" class="cake-image">
+                <span class="badge-promo">
+                    <i class="fas fa-star"></i> Peça com amor
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">Delícias artesanais preparadas com ingredientes frescos e muito carinho</p>
+            
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Bolos de Festa">
+                    <h3>Bolos de Festa</h3>
+                    <p>Bolos personalizados para aniversários, casamentos e celebrações especiais</p>
+                    <div class="preco">A partir de R$ 80</div>
+                    <a href="#encomenda" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="images/brigadeiros.jpg" alt="Docinhos">
+                    <h3>Docinhos</h3>
+                    <p>Brigadeiros, beijinhos, cajuzinhos e outros docinhos deliciosos em porções individuais</p>
+                    <div class="preco">A partir de R$ 2,50</div>
+                    <a href="#encomenda" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="images/torta.jpg" alt="Tortas">
+                    <h3>Tortas</h3>
+                    <p>Tortas de frutas, chocolate e sabores especiais recheadas com massa escolhida</p>
+                    <div class="preco">A partir de R$ 60,45</div>
+                    <a href="#encomenda" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="produto-card">
+                    <img src="images/mousse.jpg" alt="Sobremesas Especiais">
+                    <h3>Sobremesas Especiais</h3>
+                    <p>Mousses, pavês e sobremesas gourmet com sabores individuais</p>
+                    <div class="preco">A partir de R$ 12</div>
+                    <a href="#encomenda" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Sazonal -->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <h2 class="section-title">Cardápio Sazonal</h2>
+            <p class="section-subtitle">Sabores especiais da estação</p>
+
+            <div class="cardapio-grid">
+                <div class="cardapio-box box-pink">
+                    <h3><i class="fas fa-heart"></i> Bolos Especiais</h3>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Bolo Red Velvet</div>
+                            <div class="item-desc">Com cobertura cheia e frutos vermelhos</div>
+                        </div>
+                        <span class="item-price">R$ 170</span>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Bolo de Chocolate Belga</div>
+                            <div class="item-desc">Cobertura ganache e recheio premium</div>
+                        </div>
+                        <span class="item-price">R$ 140</span>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Bolo de Limão Siciliano</div>
+                            <div class="item-desc">Massa macia com cobertura cítrica</div>
+                        </div>
+                        <span class="item-price">R$ 130</span>
+                    </div>
+                </div>
+
+                <div class="cardapio-box box-yellow">
+                    <h3><i class="fas fa-cupcake"></i> Doces & Sobremesas</h3>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Kit Festa (100 docinhos)</div>
+                            <div class="item-desc">Brigadeiros, beijinhos e cajuzinhos</div>
+                        </div>
+                        <span class="item-price">R$ 200</span>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Pavê de Chocolate</div>
+                            <div class="item-desc">Serva 8 pessoas</div>
+                        </div>
+                        <span class="item-price">R$ 85,00</span>
+                    </div>
+                    <div class="cardapio-item">
+                        <div class="item-info">
+                            <div class="item-name">Mousse de Maracujá</div>
+                            <div class="item-desc">Coupée individual</div>
+                        </div>
+                        <span class="item-price">R$ 13</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Fazer Encomenda -->
+    <section class="encomenda" id="encomenda">
+        <div class="container">
+            <h2 class="section-title">Como Fazer Sua Encomenda</h2>
+            <p class="section-subtitle">Processos simples em 3 passos</p>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha</h3>
+                    <p>Selecione o produto desejado e personalize conforme sua preferência</p>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Data</h3>
+                    <p>Defina a data de entrega com pelo menos 48h de antecedência</p>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Entrega</h3>
+                    <p>Receba sua doce frequência na data combinada na região</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://wa.me/5511999999999" class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Fazer Pedido pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <p class="section-subtitle">Momentos especiais criados com muito carinho</p>
+
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Ana Paula">
+                        <div>
+                            <div class="depoimento-nome">Ana Paula</div>
+                            <div class="depoimento-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"O bolo de festa de 75 anos da minha Iva ficou perfeito! Todos queriam a receita e o sabor é indescritível. Muito obrigada!"</p>
+                </div>
+
+                <div class="depoimento-card depoimento-yellow">
+                    <div class="depoimento-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="Carlos Silva">
+                        <div>
+                            <div class="depoimento-nome">Carlos Silva</div>
+                            <div class="depoimento-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"Os docinhos do casamento foram sensacionais! Quantidades e qualidade excelente que fez a diferença. Recomendo super!"</p>
+                </div>
+
+                <div class="depoimento-card depoimento-green">
+                    <div class="depoimento-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Marina Costa">
+                        <div>
+                            <div class="depoimento-nome">Marina Costa</div>
+                            <div class="depoimento-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"Absolutamente incrível a produção e logística. Solicitei com urgência e conseguiram entregar na data combinada na região!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><img src="images/cookie.svg" alt=""></div>
+                        <div>
+                            <div class="logo-title">Doces Sonhos</div>
+                            <div class="logo-subtitle">Confeitaria Artesanal</div>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Transformando momentos especiais em memórias feitas de chocolate, frutas e muito amor.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Preços de Encomenda</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-check"></i> Bolos: 40h antecedência</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Docinhos: 24h antecedência</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Tortas: 24h antecedência</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Sobremesas: 12h antecedência</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Área de Entrega</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-pin"></i> Vila Mariana</a></li>
+                        <li><a href="#"><i class="fas fa-map-pin"></i> Pinheiros</a></li>
+                        <li><a href="#"><i class="fas fa-map-pin"></i> Jardins</a></li>
+                        <li><a href="#"><i class="fas fa-map-pin"></i> Mooca</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="tel:+5511999999999"><i class="fas fa-phone"></i> (11) 9999-9999</a></li>
+                        <li><a href="https://wa.me/5511999999999"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="mailto:contato@docessonhos.com"><i class="fas fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Doces Sonhos - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

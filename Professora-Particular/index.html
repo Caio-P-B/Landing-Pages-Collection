@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Costa - Professora Particular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-section">
+                <div class="avatar">AC</div>
+                <div class="header-info">
+                    <h1 class="header-name">Ana Costa</h1>
+                    <p class="header-subtitle">Professora Particular • Mestre em Educação</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#materias" class="nav-link">Matérias</a>
+                <a href="#metodo" class="nav-link">Método</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <button class="btn btn-primary" onclick="scrollToForm()">Agendar Aula</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Aprenda de verdade</h2>
+                <p class="hero-description">Aulas particulares personalizadas que transformam dificuldades em conquistas acadêmicas</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-accent" onclick="scrollToForm()">
+                        <span class="icon">📚</span> Agendar Aula Experimental
+                    </button>
+                    <button class="btn btn-outline">
+                        <span class="icon">▶</span> Conhecer Método
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="star">⭐</span>
+                        <span class="stat-text">4.9/5 avaliação</span>
+                    </div>
+                    <div class="stat">
+                        <span class="users">👥</span>
+                        <span class="stat-text">200+ alunos aprovados</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cards">
+                <div class="subject-card">
+                    <div class="card-icon">📐</div>
+                    <div class="card-label">Matemática</div>
+                </div>
+                <div class="subject-card">
+                    <div class="card-icon">⚛️</div>
+                    <div class="card-label">Física</div>
+                </div>
+                <div class="subject-card">
+                    <div class="card-icon">🧪</div>
+                    <div class="card-label">Química</div>
+                </div>
+                <div class="subject-card">
+                    <div class="card-icon">✏️</div>
+                    <div class="card-label">Redação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matérias Section -->
+    <section class="materias" id="materias">
+        <div class="container">
+            <h2 class="section-title">Matérias que Ensino</h2>
+            <p class="section-subtitle">Domínio completo das disciplinas mais desafiadoras</p>
+            <div class="materias-grid">
+                <div class="materia-card">
+                    <div class="materia-icon">📐</div>
+                    <h3 class="materia-title">Matemática</h3>
+                    <p class="materia-description">Álgebra, Geometria, Trigonometria, Cálculo</p>
+                    <ul class="materia-list">
+                        <li>• Ensino Fundamental</li>
+                        <li>• Ensino Médio</li>
+                        <li>• Vestibulares</li>
+                    </ul>
+                </div>
+                <div class="materia-card">
+                    <div class="materia-icon">⚛️</div>
+                    <h3 class="materia-title">Física</h3>
+                    <p class="materia-description">Mecânica, Termodinâmica, Eletromagnetismo</p>
+                    <ul class="materia-list">
+                        <li>• Ensino Médio</li>
+                        <li>• ENEM</li>
+                        <li>• Vestibulares</li>
+                    </ul>
+                </div>
+                <div class="materia-card">
+                    <div class="materia-icon">🧪</div>
+                    <h3 class="materia-title">Química</h3>
+                    <p class="materia-description">Orgânica, Inorgânica, Físico-química</p>
+                    <ul class="materia-list">
+                        <li>• Ensino Médio</li>
+                        <li>• ENEM</li>
+                        <li>• Concursos</li>
+                    </ul>
+                </div>
+                <div class="materia-card">
+                    <div class="materia-icon">✏️</div>
+                    <h3 class="materia-title">Redação</h3>
+                    <p class="materia-description">Dissertação, Argumentação, Técnicas</p>
+                    <ul class="materia-list">
+                        <li>• ENEM</li>
+                        <li>• Vestibulares</li>
+                        <li>• Concursos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método Section -->
+    <section class="metodo" id="metodo">
+        <div class="container">
+            <h2 class="section-title">Meu Método de Ensino</h2>
+            <p class="section-subtitle">Uma abordagem personalizada que garante resultados</p>
+            <div class="metodo-grid">
+                <div class="metodo-card">
+                    <div class="metodo-icon">🔍</div>
+                    <h3 class="metodo-title">1. Avaliação Inicial</h3>
+                    <p class="metodo-description">Identifico as dificuldades específicas e o nível atual do aluno para criar uma base sólida de aprendizado.</p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">📋</div>
+                    <h3 class="metodo-title">2. Plano Personalizado</h3>
+                    <p class="metodo-description">Desenvolvo um cronograma exclusivo com metas claras e material didático adaptado ao perfil do estudante.</p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">📈</div>
+                    <h3 class="metodo-title">3. Acompanhamento Contínuo</h3>
+                    <p class="metodo-description">Monitoro o progresso constantemente, ajustando estratégias e celebrando cada conquista alcançada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Públicos Atendidos -->
+    <section class="publicos">
+        <div class="container">
+            <h2 class="section-title">Públicos Atendidos</h2>
+            <p class="section-subtitle">Experiência comprovada em diferentes níveis de ensino</p>
+            <div class="publicos-grid">
+                <div class="publico-card">
+                    <div class="publico-icon">👦</div>
+                    <h3 class="publico-title">Ensino Fundamental</h3>
+                    <p class="publico-level">6º ao 9º ano</p>
+                </div>
+                <div class="publico-card">
+                    <div class="publico-icon">👨‍🎓</div>
+                    <h3 class="publico-title">Ensino Médio</h3>
+                    <p class="publico-level">1º ao 3º ano</p>
+                </div>
+                <div class="publico-card">
+                    <div class="publico-icon">🏛️</div>
+                    <h3 class="publico-title">Vestibulares</h3>
+                    <p class="publico-level">ENEM e outros</p>
+                </div>
+                <div class="publico-card">
+                    <div class="publico-icon">🎯</div>
+                    <h3 class="publico-title">Concursos</h3>
+                    <p class="publico-level">Públicos e privados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <p class="section-subtitle">O que dizem meus alunos e pais</p>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="depoimento-avatar">MS</div>
+                        <div class="depoimento-info">
+                            <h4 class="depoimento-name">Maria Silva</h4>
+                            <p class="depoimento-role">Aluna do 3º ano</p>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"Melhorei minha nota em Matemática de 4 para 8.5! A professora Ana explica de um jeito que é fácil eu conseguir entender."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="depoimento-avatar">CO</div>
+                        <div class="depoimento-info">
+                            <h4 class="depoimento-name">Carlos Oliveira</h4>
+                            <p class="depoimento-role">Pai do aluno</p>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"Meu filho passou no vestibular de Engenharia! A dedicação da professora Ana foi fundamental."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <div class="depoimento-avatar">AP</div>
+                        <div class="depoimento-info">
+                            <h4 class="depoimento-name">Ana Paula</h4>
+                            <p class="depoimento-role">Aluna do 2º ano</p>
+                        </div>
+                    </div>
+                    <p class="depoimento-text">"Química era meu pesadelo! Agora é uma das minhas matérias favoritas. Obrigada, professora!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <h2 class="cta-title">Agende sua Aula Experimental Gratuita</h2>
+                <p class="cta-description">Vamos conversar sobre seus objetivos e como posso te ajudar a alcançá-los</p>
+                <ul class="cta-benefits">
+                    <li>✓ Aula experimental de 1 hora gratuita</li>
+                    <li>✓ Avaliação completa do seu nível</li>
+                    <li>✓ Plano de estudos personalizado</li>
+                </ul>
+            </div>
+            <form class="form-aula" id="formAula" onsubmit="handleFormSubmit(event)">
+                <h3 class="form-title">Agendar Aula</h3>
+                <input type="text" placeholder="Nome Completo" class="form-input" required>
+                <input type="email" placeholder="E-mail" class="form-input" required>
+                <input type="tel" placeholder="WhatsApp" class="form-input" required>
+                <select class="form-input" required>
+                    <option value="">Selecione uma matéria</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="fisica">Física</option>
+                    <option value="quimica">Química</option>
+                    <option value="redacao">Redação</option>
+                </select>
+                <select class="form-input" required>
+                    <option value="">Selecione o nível</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="vestibular">Vestibular/ENEM</option>
+                    <option value="concurso">Concurso</option>
+                </select>
+                <button type="submit" class="btn btn-accent btn-full">Agendar Aula Gratuita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">Ana Costa</h4>
+                <p class="footer-description">Professora particular especializada em exatas com mais de 10 anos de experiência.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">@</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Formação Acadêmica</h4>
+                <ul class="footer-list">
+                    <li>• Mestre em Educação - USP</li>
+                    <li>• Licenciatura em Matemática - UNICAMP</li>
+                    <li>• Certificação em Metodologia de Ensino</li>
+                    <li>• Especialização em Neurociências Aplicadas</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-list">
+                    <li>📱 (11) 99999-9999</li>
+                    <li>📧 ana.costa@email.com</li>
+                    <li>📍 São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ana Costa - Professora Particular. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

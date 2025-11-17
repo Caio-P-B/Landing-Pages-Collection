@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Village - Cuidado Total para Seu Pet</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">🐾</div>
+                <span>Pet Village</span>
+            </div>
+            <nav id="nav">
+                <a href="#servicos">Serviços</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#creche">Creche</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="cta-button" onclick="scrollToSection('agendamento')">
+                📱 Agendar Agora
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu pet merece o melhor</h1>
+            <p class="hero-subtitle">Banho, Tosa e Creche</p>
+            <p class="hero-description">Cuidamos do seu melhor amigo com banho, tosa e creche que são oferecidas com todo o carinho e atenção esperada para um profissional experienciado e embaixador seguro.</p>
+            <button class="cta-button" onclick="scrollToSection('agendamento')">
+                ▶ Agendar Serviço
+            </button>
+        </div>
+        <img src="images/main.jpg" alt="Cães em creche segura" class="hero-image">
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Tudo que seu pet precisa em um só lugar</p>
+        
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">🛁</div>
+                <h3>Banho & Tosa</h3>
+                <p>Banhos relaxante e tosa profissional para deixar seu pet limpo, saudável e bonito.</p>
+                <a href="#" class="service-link">Saiba mais →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Creche Diária</h3>
+                <p>Ambiente a sociabilização em ambiente seguro, monitorado e com equipe dedicada.</p>
+                <a href="#" class="service-link">Saiba mais →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏥</div>
+                <h3>Veterinária</h3>
+                <p>Consultas e cuidados veterinários com profissionais experenciados.</p>
+                <a href="#" class="service-link">Saiba mais →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏨</div>
+                <h3>Hotel</h3>
+                <p>Hospedagem confortável para seu pet durante sua viagem ou compromisso.</p>
+                <a href="#" class="service-link">Saiba mais →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Creche Section -->
+    <section class="creche" id="creche">
+        <h2 class="section-title">Nossa Creche</h2>
+        <p class="section-subtitle">Um ambiente seguro e divertido para seu pet</p>
+        
+        <div class="creche-grid">
+            <img src="images/galeria1.jpg" alt="Sala de brincadeiras" class="creche-image">
+            <img src="images/galeria2.jpg" alt="Pátio externo" class="creche-image">
+            <img src="images/galeria3.jpg" alt="Área de descanso" class="creche-image">
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section class="produtos" id="produtos">
+        <h2 class="section-title">Produtos</h2>
+        <p class="section-subtitle">Tudo para o bem-estar do seu pet</p>
+        
+        <div class="produtos-container">
+            <div class="product-card">
+                <img src="images/food.jpg" alt="Rações Premium" class="product-image">
+                <div class="product-info">
+                    <h3>Rações Premium</h3>
+                    <p>Alimentação balanceada para todos os estágios da vida de seus pets.</p>
+                    <button class="product-button" onclick="addToCart('Rações Premium')">+ Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/toy.jpg" alt="Brinquedos" class="product-image">
+                <div class="product-info">
+                    <h3>Brinquedos</h3>
+                    <p>Diversidade de brinquedos para manter seu pet entretido.</p>
+                    <button class="product-button" onclick="addToCart('Brinquedos')">+ Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/acessorios.jpg" alt="Acessórios" class="product-image">
+                <div class="product-info">
+                    <h3>Acessórios</h3>
+                    <p>Coleiras, guias e muito mais para o melhor amigo.</p>
+                    <button class="product-button" onclick="addToCart('Acessórios')">+ Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Section -->
+    <section class="agendamento" id="agendamento">
+        <h2 class="section-title">Agendamento Online</h2>
+        <p class="section-subtitle">Agende o serviço do seu pet de forma rápida e fácil</p>
+        
+        <form class="agendamento-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="petName">Nome do Pet</label>
+                    <input type="text" id="petName" name="petName" required placeholder="Ex: Mel">
+                </div>
+                <div class="form-group">
+                    <label for="ownerName">Seu Nome</label>
+                    <input type="text" id="ownerName" name="ownerName" required placeholder="Ex: João Silva">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="service">Serviço</label>
+                    <select id="service" name="service" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Banho & Tosa">Banho & Tosa</option>
+                        <option value="Creche Diária">Creche Diária</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Veterinária">Veterinária</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+            </div>
+
+            <div class="form-row full">
+                <div class="form-group">
+                    <label for="date">Data</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+
+            <button type="submit" class="form-button">
+                📅 Agendar Agora
+            </button>
+        </form>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="depoimentos" id="depoimentos">
+        <h2 class="section-title">Depoimentos</h2>
+        <p class="section-subtitle">O que nossos clientes dizem</p>
+        
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="depoimento-header">
+                    <img src="images/woman1.jpg" alt="Maria Silva" class="depoimento-avatar">
+                    <div class="depoimento-info">
+                        <h4>Maria Silva</h4>
+                        <p>Agosto de 2024</p>
+                    </div>
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="depoimento-text">"O seu melhor só quer 😍 A alegria & superar observado é profissional e fantástico!"</p>
+            </div>
+
+            <div class="depoimento-card">
+                <div class="depoimento-header">
+                    <img src="images/man.jpg" alt="João Santos" class="depoimento-avatar">
+                    <div class="depoimento-info">
+                        <h4>João Santos</h4>
+                        <p>Julho de 2024</p>
+                    </div>
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="depoimento-text">"Excelente atendimento! Meu cachorro volta da creche sempre feliz e bem cuidado."</p>
+            </div>
+
+            <div class="depoimento-card">
+                <div class="depoimento-header">
+                    <img src="images/woman2.jpg" alt="Ana Costa" class="depoimento-avatar">
+                    <div class="depoimento-info">
+                        <h4>Ana Costa</h4>
+                        <p>Junho de 2024</p>
+                    </div>
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="depoimento-text">"Ambiente seguro e aconchegante! Deixo meu gato com tranquilidade. Indicado sim!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>🐾 Pet Village</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Cuidando da sua melhor amigo com amor e dedicação.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Horários</h4>
+                <ul>
+                    <li>Seg-Sexta: 8h às 18h</li>
+                    <li>Sábado: 9h às 14h</li>
+                    <li>Domingo: Fechado</li>
+                    <li style="margin-top: 0.5rem;">📍 Rua Exemplo, 123</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📧 Email: info@petvillage.com.br</li>
+                    <li>📱 WhatsApp: +55 (11) 99999-9999</li>
+                    <li style="margin-top: 1rem;"><strong>(11) 3333-8888</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Pet Village. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Success -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h2>Agendamento Confirmado!</h2>
+            <p>Seu agendamento foi realizado com sucesso. Em breve entraremos em contato para confirmar.</p>
+            <button class="modal-button" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
