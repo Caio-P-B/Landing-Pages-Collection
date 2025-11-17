@@ -6,18 +6,18 @@
 
 | Projeto | Link |
 |---------|------|
-| Academia Força Ativa | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Academia-Forca-Ativa/) |
-| Cerâmica Artesanal | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Ceramica-Artesanal/) |
-| Confeiteira Caseira | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Confeiteira-Caseira/) |
-| Consultor Financeiro | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Consultor-Financeiro/) |
-| Costureira Personalizada | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Costureira-Personalizada) |
-| Pequena Construtora | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Pequena-Construtora/) |
-| Petshop e Creche | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Petshop-e-Creche/) |
-| Pousada Serra Verde | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Pousada-Serra-Verde/) |
-| Professora Particular | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Professora-Particular/) |
-| Psicólogo Online | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Psicologo-Online/) |
-| Restaurante vegano | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Restaurante-vegano/) |
-| Técnico em Informática | [Acessar](https://caio-p-b.github.io/Portifolio_Pages/Tecnico-em-Inform%C3%A1tica/) |
+| Academia Força Ativa | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Academia-Forca-Ativa/) |
+| Cerâmica Artesanal | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Ceramica-Artesanal/) |
+| Confeiteira Caseira | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Confeiteira-Caseira/) |
+| Consultor Financeiro | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Consultor-Financeiro/) |
+| Costureira Personalizada | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Costureira-Personalizada) |
+| Pequena Construtora | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Pequena-Construtora/) |
+| Petshop e Creche | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Petshop-e-Creche/) |
+| Pousada Serra Verde | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Pousada-Serra-Verde/) |
+| Professora Particular | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Professora-Particular/) |
+| Psicólogo Online | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Psicologo-Online/) |
+| Restaurante vegano | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Restaurante-vegano/) |
+| Técnico em Informática | [Acessar](https://caio-p-b.github.io/Landing-Pages-Collection/Tecnico-em-Inform%C3%A1tica/) |
 
 ## Tecnologias
 
